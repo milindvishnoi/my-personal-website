@@ -1,0 +1,38 @@
+<template>
+  <section class="d-flex flex-column justify-center align-center" style="height: 100%" >
+    <h2 style="color: #E53935;">HELLO, I'M</h2>
+    <h1>MILIND VISHNOI</h1>
+    <vue-typed-js :strings="listOfThings" :typeSpeed="50" :backSpeed="50" :loop="true" :cursorChar="'_'">
+      <h3>A <span class="typing"></span></h3>
+    </vue-typed-js>
+    <v-btn style="margin: 10px;" class="mx-2" fab color="headings">
+      <v-icon>mdi-arrow-down</v-icon>
+    </v-btn>
+  </section>
+</template>
+
+<script>
+  export default {
+    name: 'HomePage',
+    data() {
+      return{
+        listOfThings: [
+          'Software Developer.',
+          // 'Blogger.',
+          'Memer.',
+          'Computer Science Student.',
+          'Mathematics Enthusiast.'
+        ]
+      }
+    }
+  }
+</script>
+
+<style>
+  h1 {
+    font-size: 70px;
+  }
+  h2 {
+    font-size: 40px;
+  }
+</style>

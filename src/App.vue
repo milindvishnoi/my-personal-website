@@ -1,21 +1,21 @@
 <template>
   <v-app>
     <navbar />
-    <hello-world />
-    <div style="height: 10000px;" />
+    <home-page />
+    <!-- <div style="height: 10000px;" /> -->
   </v-app>
 </template>
 
 <script>
 import Navbar from "./components/Navbar.vue"
-import HelloWorld from "./components/HelloWorld.vue"
+import HomePage from "./components/HomePage.vue"
 
 export default {
   name: 'App',
 
   components: {
-      HelloWorld,
-      Navbar
+    HomePage,
+    Navbar
   },
 
   data: () => ({
