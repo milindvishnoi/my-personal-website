@@ -1,6 +1,5 @@
 <template>
-    <div>
-      <v-card
+    <v-card
     color="grey lighten-4"
     flat
     tile
@@ -24,16 +23,28 @@
       <v-btn icon color="secondary" style="margin: 2px;" href="https://github.com/milindvishnoi">
         <v-icon x-large>mdi-github</v-icon>
       </v-btn>
-      <v-btn icon color="secondary" style="margin: 2px;">
+      <v-btn v-if="getDarkMode" @click="$vuetify.theme.dark = ! $vuetify.theme.dark" icon color="secondary" style="margin: 2px;">
         <v-icon x-large>mdi-weather-sunny</v-icon>
+      </v-btn>
+      <v-btn v-else @click="$vuetify.theme.dark = ! $vuetify.theme.dark" icon color="secondary" style="margin: 2px;">
+        <v-icon x-large>mdi-weather-night</v-icon>
       </v-btn>
     </v-toolbar>
   </v-card>
-    </div>
 </template>
 
 <script>
     export default {
+      computed: {
+        getDarkMode: {
+          get: function() {
+            return this.$vuetify.theme.dark;
+          },
+          set: function(newValue) {
+            this.$vuetify.theme.data = newValue;
+          }
+        }
+      },
     }
 </script>
 
