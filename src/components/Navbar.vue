@@ -8,27 +8,21 @@
     >
     <!-- For Mobiles -->
     <v-toolbar v-if="getMobile" :color="getDarkMode ? 'none' : 'primary'" dense min-height="52px">
+      <v-btn icon color="headings">
+        <v-icon x-large>mdi-apps</v-icon>
+      </v-btn>
       <v-spacer />
         <v-btn text x-large color="headings">
           <v-icon x-large>mdi-home</v-icon>
         </v-btn>
       <v-spacer />
-      <!-- <v-btn icon color="headings" style="margin: 2px;" href="https://www.instagram.com/confessions.of.a.coding.freak/">
-        <v-icon x-large>mdi-instagram</v-icon>
-      </v-btn>
-      <v-btn icon color="headings" style="margin: 2px;" href="https://github.com/milindvishnoi">
-        <v-icon x-large>mdi-github</v-icon>
-      </v-btn>
-      <v-btn icon color="headings" style="margin: 2px;" href="https://www.linkedin.com/in/milindvishnoi/">
-        <v-icon x-large>mdi-linkedin</v-icon>
-      </v-btn> -->
       <!-- Disabled Light Mode -->
-      <!-- <v-btn v-if="getDarkMode" @click="$vuetify.theme.dark = ! $vuetify.theme.dark" icon color="headings" style="margin: 2px;">
+      <v-btn v-if="getDarkMode" @click="$vuetify.theme.dark = ! $vuetify.theme.dark" icon color="headings" style="margin: 2px;">
         <v-icon x-large>mdi-weather-sunny</v-icon>
       </v-btn>
       <v-btn v-else @click="$vuetify.theme.dark = ! $vuetify.theme.dark" icon color="headings" style="margin: 2px;">
         <v-icon x-large>mdi-weather-night</v-icon>
-      </v-btn> -->
+      </v-btn>
     </v-toolbar>
     <!-- For Laptops   -->
     <v-toolbar v-else :color="getDarkMode ? 'none' : 'primary'" dense min-height="52px">
@@ -44,8 +38,13 @@
           Projects
         </v-btn>
 
-        <v-btn x-large text color="headings">
+        <!-- For now not displaying experience -->
+        <!-- <v-btn x-large text color="headings">
+          Experience
+        </v-btn> -->
 
+        <v-btn x-large text color="headings">
+          Contact Me
         </v-btn>
       <v-spacer />
       <v-btn icon color="headings" style="margin: 2px;" href="https://www.instagram.com/confessions.of.a.coding.freak/">
@@ -58,12 +57,12 @@
         <v-icon x-large>mdi-linkedin</v-icon>
       </v-btn>
       <!-- Disabled Light Mode -->
-      <!-- <v-btn v-if="getDarkMode" @click="$vuetify.theme.dark = ! $vuetify.theme.dark" icon color="headings" style="margin: 2px;">
+      <v-btn v-if="getDarkMode" @click="$vuetify.theme.dark = ! $vuetify.theme.dark" icon color="headings" style="margin: 2px;">
         <v-icon x-large>mdi-weather-sunny</v-icon>
       </v-btn>
       <v-btn v-else @click="$vuetify.theme.dark = ! $vuetify.theme.dark" icon color="headings" style="margin: 2px;">
         <v-icon x-large>mdi-weather-night</v-icon>
-      </v-btn> -->
+      </v-btn>
     </v-toolbar>
     </v-card>
   </div>
