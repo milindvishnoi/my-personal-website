@@ -2,8 +2,13 @@
   <v-app>
     <navbar />
     <home-page />
-    <!-- <div style="height: 10000px;" /> -->
-    <bottom-app-bar />
+    <v-container>
+      <v-row>
+        <v-col cols="12">
+          <bottom-app-bar />
+        </v-col>
+      </v-row>
+    </v-container>
   </v-app>
 </template>
 
