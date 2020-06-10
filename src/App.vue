@@ -8,7 +8,7 @@
           <bottom-app-bar />
         </v-col>
       </v-row>
-      <v-row class="justify-center" :sm="4" :xs="12" cols="4" >
+      <v-row cols="12" class="justify-center">
         <Projects />
       </v-row>
       <div style="height: 50px;" />

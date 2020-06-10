@@ -1,5 +1,5 @@
 <template>
-    <v-col>
+    <v-col :sm="6" :xs="12" cols="4" >
         <span v-for="(p, i) in projects" :key="i">
         <app-card
             :projectName="p.projectName"

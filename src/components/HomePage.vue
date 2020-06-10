@@ -1,5 +1,5 @@
 <template>
-  <section class="d-flex flex-column justify-center align-center" style="height: 100%" >
+  <section class="d-flex flex-column justify-center align-center" style="min-height:90%;" >
     <h2 :class="{'small-h2': getMobile}" style="color: #E53935;">HELLO, I'M</h2>
     <h1 :class="{'small-h1': getMobile}">MILIND VISHNOI</h1>
     <vue-typed-js :strings="listOfThings" :typeSpeed="50" :backSpeed="50" :loop="true" :cursorChar="'_'">
