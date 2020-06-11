@@ -1,16 +1,22 @@
 <template>
-    <v-col :sm="6" :xs="12" cols="4" >
-        <span v-for="(p, i) in projects" :key="i">
-        <app-card
-            :desc="p.desc"
-            :projectName="p.projectName"
-            :descriptionOne="p.descriptionOne"
-            :descriptionTwo="p.descriptionTwo"
-            :website="p.website"
-            :github="p.github"
-            :web="p.web" />
-        </span>
-    </v-col>
+    <v-row>
+        <v-col
+        cols="12"
+        sm="6"
+        md="4"
+        v-for="(p, i) in projects" 
+        :key="i"
+        >
+            <app-card
+                :desc="p.desc"
+                :projectName="p.projectName"
+                :descriptionOne="p.descriptionOne"
+                :descriptionTwo="p.descriptionTwo"
+                :website="p.website"
+                :github="p.github"
+                :web="p.web" />
+        </v-col>
+    </v-row>
 </template>
 
 <script>
@@ -60,7 +66,7 @@ import AppCard from './AppCard.vue'
                     {
                         desc: 'Python Game',
                         projectName: 'Mynes',
-                        descriptionOne: 'When I finally got a computer. I tried playing the classics but never seemed to understand any of them.',
+                        descriptionOne: 'When I finally got a computer. I tried playing the built-in classic games but never understood any of them.',
                         descriptionTwo: 'Now when I know how most of them are played, I want to bring them back. This game is an attempt to do so.',
                         github: 'https://github.com/milindvishnoi/Mynes'
                     },

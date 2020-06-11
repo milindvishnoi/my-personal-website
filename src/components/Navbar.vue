@@ -7,7 +7,7 @@
     tile
     >
     <!-- For Mobiles -->
-    <v-toolbar v-if="getMobile" :color="getDarkMode ? 'none' : 'primary'" dense min-height="52px">
+    <v-toolbar class="d-md-none" :color="getDarkMode ? 'none' : 'primary'" dense min-height="52px">
       <v-btn icon color="headings">
         <v-icon x-large>mdi-apps</v-icon>
       </v-btn>
@@ -25,7 +25,7 @@
       </v-btn>
     </v-toolbar>
     <!-- For Laptops   -->
-    <v-toolbar v-else :color="getDarkMode ? 'none' : 'primary'" dense min-height="52px">
+    <v-toolbar class="hidden-sm-and-down" :color="getDarkMode ? 'none' : 'primary'" dense min-height="52px">
         <v-btn x-large text color="headings">
           Home
         </v-btn>
@@ -83,12 +83,6 @@
           set: function(newValue) {
             this.$vuetify.theme.data = newValue;
           }
-        },
-        getMobile() {
-          if(this.$vuetify.breakpoint.sm || this.$vuetify.breakpoint.xs) {
-            return true;
-          }
-          return false;
         }
       },
     }

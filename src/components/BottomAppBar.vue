@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-bottom-navigation v-if="getMobile" fixed background-color="headings" color="white">
+    <v-bottom-navigation class="d-md-none" fixed background-color="headings" color="white">
         <v-btn icon style="margin: 2px;" href="https://www.instagram.com/confessions.of.a.coding.freak/">
             <v-icon x-large>mdi-instagram</v-icon>
         </v-btn>
@@ -16,14 +16,6 @@
 
 <script>
     export default {
-        computed: {
-            getMobile() {
-                if(this.$vuetify.breakpoint.sm || this.$vuetify.breakpoint.xs) {
-                    return true;
-                }
-                return false;
-            }
-        }
     }
 </script>
 

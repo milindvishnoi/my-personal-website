@@ -1,18 +1,16 @@
 <template>
   <v-app>
     <navbar />
-    <home-page />
+    <v-container >
+      <v-col>
+      <home-page />
+      </v-col>
+    </v-container>
     <v-container>
-      <v-row>
-        <v-col cols="12">
-          <bottom-app-bar />
-        </v-col>
-      </v-row>
-      <v-row cols="12" class="justify-center">
-        <Projects />
-      </v-row>
+      <Projects />
       <div style="height: 50px;" />
     </v-container>
+    <bottom-app-bar />
   </v-app>
 </template>
 
