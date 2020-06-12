@@ -1,5 +1,8 @@
 <template>
     <v-row>
+        <v-col cols="12" class="d-flex justify-center">
+            <h1>Projects</h1>
+        </v-col>
         <v-col
         cols="12"
         sm="6"
@@ -36,7 +39,7 @@ import AppCard from './AppCard.vue'
                     },
                     {
                         desc: 'Python Sript',
-                        projectName: 'Download Folder Organizer',
+                        projectName: 'Downloads Organizer',
                         descriptionOne: 'Once my laptop was running out of storage and my download folder used 100gb. It took me 2 hours of declustering.',
                         descriptionTwo: 'So I created this sript to organize my download folder as soon as I download something.',
                         github: 'https://github.com/milindvishnoi/Download-Folder-Organizer',

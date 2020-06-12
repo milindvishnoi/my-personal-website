@@ -27,7 +27,7 @@
     },
     computed: {
       getMobile() {
-        if(this.$vuetify.breakpoint.sm || this.$vuetify.breakpoint.xs) {
+        if( this.$vuetify.breakpoint.xs) {
           return true;
         }
         return false;

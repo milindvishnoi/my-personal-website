@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <navbar />
-    <v-container >
+    <v-container app full-height>
       <v-col>
       <home-page />
       </v-col>

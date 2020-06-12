@@ -7,23 +7,82 @@
     tile
     >
     <!-- For Mobiles -->
-    <v-toolbar class="d-md-none" :color="getDarkMode ? 'none' : 'primary'" dense min-height="52px">
-      <v-btn icon color="headings">
-        <v-icon x-large>mdi-apps</v-icon>
-      </v-btn>
+    <v-toolbar 
+    class="d-md-none" 
+    :color="getDarkMode ? 'none' : 'primary'" 
+    dense 
+    min-height="52px">
+    <v-app-bar-nav-icon @click="clicked = !clicked" x-large color="headings"></v-app-bar-nav-icon>
       <v-spacer />
         <v-btn text x-large color="headings">
           <v-icon x-large>mdi-home</v-icon>
         </v-btn>
       <v-spacer />
       <!-- Disabled Light Mode -->
-      <v-btn v-if="getDarkMode" @click="$vuetify.theme.dark = ! $vuetify.theme.dark" icon color="headings" style="margin: 2px;">
+      <v-btn 
+      v-if="getDarkMode" 
+      @click="$vuetify.theme.dark = ! $vuetify.theme.dark" 
+      icon 
+      color="headings" 
+      style="margin: 2px;">
         <v-icon x-large>mdi-weather-sunny</v-icon>
       </v-btn>
-      <v-btn v-else @click="$vuetify.theme.dark = ! $vuetify.theme.dark" icon color="headings" style="margin: 2px;">
+      <v-btn 
+      v-else 
+      @click="$vuetify.theme.dark = ! $vuetify.theme.dark" 
+      icon 
+      color="headings" 
+      style="margin: 2px;">
         <v-icon x-large>mdi-weather-night</v-icon>
       </v-btn>
     </v-toolbar>
+
+    <!-- Divider (for mobiles) -->
+    <v-navigation-drawer 
+    app 
+    v-model="clicked"
+    class="d-md-none" 
+    >
+      <v-list
+        dense
+        nav
+      >
+        <v-list-item two-line class="px-0">
+            <v-list-item-avatar>
+              <!-- TODO: Display My Img -->
+              <img src="">
+            </v-list-item-avatar>
+
+            <v-list-item-content>
+              <v-list-item-title style="color:#E53935;font-size:15px;">I'M MILIND VISHNOI</v-list-item-title>
+                <vue-typed-js 
+                :strings="listOfThings" 
+                :typeSpeed="50" 
+                :backSpeed="50" 
+                :loop="true" 
+                :cursorChar="'_'">
+                  <v-list-item-subtitle>A <span class="typing"></span></v-list-item-subtitle>
+                </vue-typed-js>
+            </v-list-item-content>
+          </v-list-item>
+
+          <v-divider></v-divider>
+
+          <v-list-item
+            v-for="item in items"
+            :key="item.title"
+            link
+          >
+            <v-list-item-icon>
+              <v-icon large>{{ item.icon }}</v-icon>
+            </v-list-item-icon>
+            <v-list-item-content>
+              <v-list-item-title large>{{ item.title }}</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+      </v-list>
+    </v-navigation-drawer>
+
     <!-- For Laptops   -->
     <v-toolbar class="hidden-sm-and-down" :color="getDarkMode ? 'none' : 'primary'" dense min-height="52px">
         <v-btn x-large text color="headings">
@@ -57,10 +116,20 @@
         <v-icon x-large>mdi-linkedin</v-icon>
       </v-btn>
       <!-- Disabled Light Mode -->
-      <v-btn v-if="getDarkMode" @click="$vuetify.theme.dark = ! $vuetify.theme.dark" icon color="headings" style="margin: 2px;">
+      <v-btn 
+      v-if="getDarkMode" 
+      @click="$vuetify.theme.dark = ! $vuetify.theme.dark" 
+      icon 
+      color="headings" 
+      style="margin: 2px;">
         <v-icon x-large>mdi-weather-sunny</v-icon>
       </v-btn>
-      <v-btn v-else @click="$vuetify.theme.dark = ! $vuetify.theme.dark" icon color="headings" style="margin: 2px;">
+      <v-btn 
+      v-else 
+      @click="$vuetify.theme.dark = ! $vuetify.theme.dark" 
+      icon 
+      color="headings" 
+      style="margin: 2px;">
         <v-icon x-large>mdi-weather-night</v-icon>
       </v-btn>
     </v-toolbar>
@@ -72,7 +141,21 @@
     export default {
       data() {
         return {
-          overlay: false
+          overlay: false,
+          clicked: false,
+          items: [
+            { title: 'Home', icon: 'mdi-home' },
+            { title: 'About Me', icon: 'mdi-help' },
+            { title: 'Projects', icon: 'mdi-xml' },
+            { title: 'Contact Me', icon: 'mdi-send-circle-outline' }
+            ],
+            listOfThings: [
+          'Software Developer.',
+          // 'Blogger.',
+          'Memer.',
+          'Computer Science Student.',
+          'Mathematics Enthusiast.'
+        ]
         }
       },
       computed: {
