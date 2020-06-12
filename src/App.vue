@@ -16,9 +16,9 @@
 
 <script>
 import Navbar from "./components/Navbar.vue"
-import HomePage from "./components/HomePage.vue"
+import HomePage from "./views/HomePage.vue"
 import BottomAppBar from "./components/BottomAppBar.vue"
-import Projects from "./components/Projects.vue"
+import Projects from "./views/Projects.vue"
 // import AppCard from "./components/AppCard.vue"
 
 export default {
