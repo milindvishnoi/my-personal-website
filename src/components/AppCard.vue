@@ -44,7 +44,7 @@
             },
             isdescriptionTwo(){
                 return this.descriptionTwo > ''
-            }
+            },
         }
     }
 </script>

@@ -9,8 +9,9 @@
     <!-- For Mobiles -->
     <v-toolbar 
     class="d-md-none" 
-    :color="getDarkMode ? 'none' : 'primary'" 
+    :color="getDarkMode ? '#121212' : 'primary'" 
     dense 
+    flat
     min-height="52px">
     <v-app-bar-nav-icon @click="clicked = !clicked" x-large color="headings"></v-app-bar-nav-icon>
       <v-spacer />
@@ -49,8 +50,7 @@
       >
         <v-list-item two-line class="px-0">
             <v-list-item-avatar>
-              <!-- TODO: Display My Img -->
-              <img src="">
+              <img src="../assets/img/dp.png">
             </v-list-item-avatar>
 
             <v-list-item-content>
@@ -84,7 +84,13 @@
     </v-navigation-drawer>
 
     <!-- For Laptops   -->
-    <v-toolbar class="hidden-sm-and-down" :color="getDarkMode ? 'none' : 'primary'" dense min-height="52px">
+    <v-toolbar 
+    class="hidden-sm-and-down" 
+    :color="getDarkMode ? '#121212' : 'primary'" 
+    dense 
+    flat
+    min-height="52px"
+    >
         <v-btn x-large text color="headings">
           Home
         </v-btn>
