@@ -1,12 +1,10 @@
 <template>
   <v-app>
     <navbar />
-    <v-container app full-height>
-      <v-col>
+    <v-container app>
       <home-page />
-      </v-col>
     </v-container>
-    <v-container>
+    <v-container class="pt-8">
       <Projects />
       <div style="height: 50px;" />
     </v-container>
@@ -15,27 +13,27 @@
 </template>
 
 <script>
-import Navbar from "./components/Navbar.vue"
-import HomePage from "./views/HomePage.vue"
-import BottomAppBar from "./components/BottomAppBar.vue"
-import Projects from "./views/Projects.vue"
-// import AppCard from "./components/AppCard.vue"
+import Navbar from "./components/Navbar.vue";
+import HomePage from "./views/HomePage.vue";
+import BottomAppBar from "./components/BottomAppBar.vue";
+import Projects from "./views/Projects.vue";
 
 export default {
-  name: 'App',
+  name: "App",
 
   components: {
     HomePage,
     Navbar,
     BottomAppBar,
     Projects
-    // AppCard
   },
 
   data() {
-    return {
-      
-    }
-  },
+    return {};
+  }
 };
 </script>
+
+<style>
+
+</style>
