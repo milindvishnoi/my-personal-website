@@ -1,5 +1,5 @@
 <template>
-  <section class="d-flex flex-column justify-center align-center hero-full-height">
+  <section id="home" class="d-flex flex-column justify-center align-center hero-full-height">
     <div class="d-flex justify-center align-center">
       <div class="d-flex flex-column justify-center align-center">
         <h2 :class="{'small-h2': getMobile}" style="color: #E53935;">HELLO, I'M</h2>

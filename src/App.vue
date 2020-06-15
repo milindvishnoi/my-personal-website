@@ -1,13 +1,16 @@
 <template>
   <v-app>
     <navbar />
+    <!-- Home Page Container -->
     <v-container app>
       <home-page />
     </v-container>
+    <!-- Projects Container -->
     <v-container class="pt-8">
-      <Projects />
-      <div style="height: 50px;" />
+        <Projects />
     </v-container>
+    <!-- Last Indentation -->
+    <div style="height: 50px;" />
     <bottom-app-bar />
   </v-app>
 </template>
