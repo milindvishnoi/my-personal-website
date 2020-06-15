@@ -1,15 +1,10 @@
 <template>
   <section class="d-flex flex-column justify-center align-center hero-full-height">
-    <div class="d-flex align-center">
+    <div class="d-flex justify-center align-center">
       <div class="d-flex flex-column justify-center align-center">
         <h2 :class="{'small-h2': getMobile}" style="color: #E53935;">HELLO, I'M</h2>
         <div class="d-flex justify-around align-center justify-center">
-          <img
-            v-if="!getMobile"
-            width="130px"
-            style="margin-right: 20px;"
-            src="../assets/img/dp.png"
-          />
+          <img :width="imageWidth" style="margin-right: 20px;" src="../assets/img/dp.png" />
           <h1 :class="{'small-h1': getMobile, 'med-h1': this.$vuetify.breakpoint.sm}">MILIND VISHNOI</h1>
         </div>
         <vue-typed-js
@@ -52,6 +47,15 @@ export default {
         return true;
       }
       return false;
+    },
+    imageWidth() {
+      switch (this.$vuetify.breakpoint.name) {
+        case "xs":
+          return "70px";
+        case "sm":
+          return "130px";
+      }
+      return "160px";
     }
   }
 };
@@ -71,7 +75,7 @@ h2 {
   font-size: 60px;
 }
 .small-h1 {
-  font-size: 40px;
+  font-size: 34px;
 }
 .small-h2 {
   font-size: 30px;

@@ -96,7 +96,7 @@
         </v-btn>
 
         <v-btn x-large text color="headings">
-          About Me
+          Who Am I?
         </v-btn>
 
         <v-btn x-large text color="headings">
@@ -151,9 +151,9 @@
           clicked: false,
           items: [
             { title: 'Home', icon: 'mdi-home' },
-            { title: 'About Me', icon: 'mdi-help' },
+            { title: 'Who Am I?', icon: 'mdi-account' },
             { title: 'Projects', icon: 'mdi-xml' },
-            { title: 'Contact Me', icon: 'mdi-send-circle-outline' }
+            { title: 'Contact Me', icon: 'mdi-gmail' }
             ],
             listOfThings: [
           'Software Developer.',
