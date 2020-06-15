@@ -1,7 +1,7 @@
 <template>
   <v-row id="projects">
     <v-col cols="12" class="d-flex justify-center">
-      <h1>Projects</h1>
+      <h1 :class="{'small-h1': getMobile, 'med-h1': this.$vuetify.breakpoint.sm}">Projects</h1>
     </v-col>
     <v-col cols="12" sm="6" md="4" v-for="(p, i) in projects" :key="i">
       <app-card
@@ -21,6 +21,14 @@
 import AppCard from "../components/AppCard.vue";
 
 export default {
+  computed: {
+    getMobile() {
+      if (this.$vuetify.breakpoint.xs) {
+        return true;
+      }
+      return false;
+    }
+  },
   data() {
     return {
       projects: [
@@ -90,4 +98,13 @@ export default {
 </script>
 
 <style scoped>
+h1 {
+  font-size: 80px;
+}
+.med-h1 {
+  font-size: 60px;
+}
+.small-h1 {
+  font-size: 50px;
+}
 </style>
