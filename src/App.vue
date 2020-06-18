@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app :style="{background: $vuetify.theme.themes[theme].background}">
     <navbar />
     <!-- Home Page Container -->
     <v-container app id="home">
@@ -42,6 +42,11 @@ export default {
 
   data() {
     return {};
+  },
+  computed:{
+    theme(){
+      return (this.$vuetify.theme.dark) ? 'dark' : 'light'
+    }
   }
 };
 </script>
@@ -55,5 +60,8 @@ h1 {
 }
 .small-h1 {
   font-size: 45px;
+}
+.website-background {
+  background: white;
 }
 </style>

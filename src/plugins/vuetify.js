@@ -9,17 +9,17 @@ export default new Vuetify({
         themes:{
             dark: {
                 primary: "#2B2D42", //dark voilet
-                secondary: "#EDF2F4", //light grey
-                extra: "#E53935", //red
-                accent: "#EDF2F4", //vanilla-whittish
                 headings: "#D90429", //darker red
-                trying: "#EF233C"
+                nav: "#D90429",
+                background: "#121212",
+                text: "#FFFFFF"
             },
             light: {
-                primary: '#EAE0CC',
-                secondary: "#E53935",
-                headings: "#2B2D42",
-                nav: "#D90429"
+                primary: '#EDF2F4',
+                headings: "#D90429",
+                nav: "#2B2D42",
+                background: "#EAE0CC",
+                text: "#000000"
             }
         }
     }

@@ -4,14 +4,14 @@
       <!-- For Mobiles -->
       <v-toolbar
         class="d-md-none"
-        :color="getDarkMode ? '#121212' : 'primary'"
+        color="background"
         dense
         flat
         min-height="52px"
       >
-        <v-app-bar-nav-icon @click="clicked = !clicked" x-large color="headings"></v-app-bar-nav-icon>
+        <v-app-bar-nav-icon @click="clicked = !clicked" x-large color="nav"></v-app-bar-nav-icon>
         <v-spacer />
-        <v-btn text x-large color="headings">
+        <v-btn text x-large color="nav">
           <v-icon x-large @click="$vuetify.goTo('#home')">mdi-home</v-icon>
         </v-btn>
         <v-spacer />
@@ -20,7 +20,7 @@
           v-if="getDarkMode"
           @click="$vuetify.theme.dark = ! $vuetify.theme.dark"
           icon
-          color="headings"
+          color="nav"
           style="margin: 2px;"
         >
           <v-icon x-large>mdi-weather-sunny</v-icon>
@@ -29,7 +29,7 @@
           v-else
           @click="$vuetify.theme.dark = ! $vuetify.theme.dark"
           icon
-          color="headings"
+          color="nav"
           style="margin: 2px;"
         >
           <v-icon x-large>mdi-weather-night</v-icon>
@@ -78,38 +78,38 @@
       <!-- For Laptops   -->
       <v-toolbar
         class="hidden-sm-and-down"
-        :color="getDarkMode ? '#121212' : 'primary'"
+        color="background"
         dense
         flat
         min-height="52px"
       >
-        <v-btn x-large text color="headings" @click="$vuetify.goTo('#home')">Home</v-btn>
+        <v-btn x-large text color="nav" @click="$vuetify.goTo('#home')">Home</v-btn>
 
-        <v-btn x-large text color="headings" @click="$vuetify.goTo('#aboutme')">Who Am I?</v-btn>
+        <v-btn x-large text color="nav" @click="$vuetify.goTo('#aboutme')">Who Am I?</v-btn>
 
-        <v-btn x-large text color="headings" @click="$vuetify.goTo('#projects')">Projects</v-btn>
+        <v-btn x-large text color="nav" @click="$vuetify.goTo('#projects')">Projects</v-btn>
 
         <!-- For now not displaying experience -->
-        <!-- <v-btn x-large text color="headings">
+        <!-- <v-btn x-large text color="nav">
           Experience
         </v-btn>-->
 
-        <!-- <v-btn x-large text color="headings" @click="$vuetify.goTo('#contactme')">Contact Me</v-btn> -->
+        <!-- <v-btn x-large text color="nav" @click="$vuetify.goTo('#contactme')">Contact Me</v-btn> -->
         <v-spacer />
         <v-btn
           icon
-          color="headings"
+          color="nav"
           style="margin: 2px;"
           href="https://www.instagram.com/confessions.of.a.coding.freak/"
         >
           <v-icon x-large>mdi-instagram</v-icon>
         </v-btn>
-        <v-btn icon color="headings" style="margin: 2px;" href="https://github.com/milindvishnoi">
+        <v-btn icon color="nav" style="margin: 2px;" href="https://github.com/milindvishnoi">
           <v-icon x-large>mdi-github</v-icon>
         </v-btn>
         <v-btn
           icon
-          color="headings"
+          color="nav"
           style="margin: 2px;"
           href="https://www.linkedin.com/in/milindvishnoi/"
         >
@@ -120,7 +120,7 @@
           v-if="getDarkMode"
           @click="$vuetify.theme.dark = ! $vuetify.theme.dark"
           icon
-          color="headings"
+          color="nav"
           style="margin: 2px;"
         >
           <v-icon x-large>mdi-weather-sunny</v-icon>
@@ -129,7 +129,7 @@
           v-else
           @click="$vuetify.theme.dark = ! $vuetify.theme.dark"
           icon
-          color="headings"
+          color="nav"
           style="margin: 2px;"
         >
           <v-icon x-large>mdi-weather-night</v-icon>
