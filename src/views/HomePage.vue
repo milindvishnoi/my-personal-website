@@ -19,7 +19,7 @@
             <span class="typing"></span>
           </h3>
         </vue-typed-js>
-        <v-btn style="margin: 10px;" class="mx-2" fab color="headings">
+        <v-btn style="margin: 10px;" class="mx-2" fab color="headings" @click="$vuetify.goTo('#aboutme')">
           <v-icon>mdi-arrow-down</v-icon>
         </v-btn>
       </div>
