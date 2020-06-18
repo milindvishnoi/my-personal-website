@@ -1,5 +1,5 @@
 <template>
-  <v-row id="projects">
+  <v-row>
     <v-col cols="12" class="d-flex justify-center">
       <h1 :class="{'small-h1': getMobile, 'med-h1': this.$vuetify.breakpoint.sm}">Projects</h1>
     </v-col>

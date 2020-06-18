@@ -2,7 +2,7 @@
   <v-app>
     <navbar />
     <!-- Home Page Container -->
-    <v-container app>
+    <v-container app id="home">
       <home-page />
     </v-container>
     <!-- About Me -->
@@ -13,7 +13,7 @@
       <about-me />
     </v-container>
     <!-- Projects Container -->
-    <v-container class="pt-8">
+    <v-container class="pt-8" id="projects">
       <Projects />
     </v-container>
     <!-- Last Indentation -->

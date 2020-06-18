@@ -183,6 +183,7 @@ export default {
   },
   methods: {
     navMethods(call) {
+      this.clicked = false;
       switch (call) {
         case "home":
           this.$vuetify.goTo("#home");
