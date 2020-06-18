@@ -4,8 +4,8 @@
       <div class="d-flex flex-column justify-center align-center">
         <h2 :class="{'small-h2': this.$vuetify.breakpoint.xs}" style="color: #E53935;">HELLO, I'M</h2>
         <div class="d-flex justify-around align-center justify-center">
-          <img :width="imageWidth" class="mr-5" src="../assets/img/dp.png" />
-          <h1 :class="{'small-h1': this.$vuetify.breakpoint.xs, 'med-h1': this.$vuetify.breakpoint.sm}">MILIND VISHNOI</h1>
+          <img :width="imageWidth" :class="{'ml-8':this.$vuetify.breakpoint.xs}" src="../assets/img/dp.png" />
+          <h1 class="ml-4" :class="{'small-h1': this.$vuetify.breakpoint.xs, 'med-h1': this.$vuetify.breakpoint.sm}">MILIND VISHNOI</h1>
         </div>
         <vue-typed-js
           :strings="listOfThings"
