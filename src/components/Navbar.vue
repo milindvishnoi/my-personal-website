@@ -12,7 +12,7 @@
         <v-app-bar-nav-icon @click="clicked = !clicked" x-large color="headings"></v-app-bar-nav-icon>
         <v-spacer />
         <v-btn text x-large color="headings">
-          <v-icon x-large>mdi-home</v-icon>
+          <v-icon x-large @click="$vuetify.goTo('#home')">mdi-home</v-icon>
         </v-btn>
         <v-spacer />
         <!-- Disabled Light Mode -->
@@ -94,7 +94,7 @@
           Experience
         </v-btn>-->
 
-        <v-btn x-large text color="headings" @click="$vuetify.goTo('#contactme')">Contact Me</v-btn>
+        <!-- <v-btn x-large text color="headings" @click="$vuetify.goTo('#contactme')">Contact Me</v-btn> -->
         <v-spacer />
         <v-btn
           icon
@@ -157,11 +157,11 @@ export default {
           icon: "mdi-xml",
           call: "projects"
         },
-        {
-          title: "Contact Me",
-          icon: "mdi-gmail",
-          call: "contactme"
-        }
+        // {
+        //   title: "Contact Me",
+        //   icon: "mdi-gmail",
+        //   call: "contactme"
+        // }
       ],
       listOfThings: [
         "Software Developer.",
