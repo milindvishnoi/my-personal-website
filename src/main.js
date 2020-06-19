@@ -8,6 +8,9 @@ Vue.use(VueTypedJs)
 Vue.config.productionTip = false
 
 new Vue({
+  meta:{
+    title: "Milind's Portfolio"
+  },
   icons: {
     iconfont: 'fa',
   },
