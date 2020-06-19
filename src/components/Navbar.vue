@@ -165,6 +165,7 @@ export default {
       ],
       listOfThings: [
         "Software Developer.",
+        "Web Developer",
         "Memer.",
         "Computer Science Student.",
         "Mathematics Enthusiast."

@@ -34,6 +34,7 @@ export default {
     return {
       listOfThings: [
         "Software Developer.",
+        "Web Developer",
         // 'Blogger.',
         "Memer.",
         "Computer Science Student.",
