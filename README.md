@@ -1,3 +1,3 @@
 # personal-website
 
-Please check out my website at https://bit.ly/2cmyqjn
+Please check out my website by clicking [bit.ly/2cmyqjn](https://bit.ly/2CmyQjN "https://bit.ly/2CmyQjN")
