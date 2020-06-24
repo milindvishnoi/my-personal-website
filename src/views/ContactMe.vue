@@ -1,27 +1,37 @@
 <template>
-  <div class="justify-center items-center">
-    <v-form ref="form" v-model="valid" lazy-validation>
-      <v-text-field
-        v-model="firstName"
-        :counter="30"
-        :rules="firstNameRules"
-        label="First Name"
-        required
-      ></v-text-field>
+  <div>
+    <v-form method="post" @submit="submitMedthod" ref="form" v-model="valid" lazy-validation>
+      <div class="justify-center">
+        <v-text-field
+          v-model="firstName"
+          :counter="30"
+          :rules="firstNameRules"
+          label="First Name *"
+          required
+          filled
+        ></v-text-field>
 
-      <v-text-field
-        v-model="lastName"
-        :counter="30"
-        :rules="lastNameRules"
-        label="Last Name"
-        required
-      ></v-text-field>
+        <v-text-field
+          v-model="lastName"
+          :counter="30"
+          :rules="lastNameRules"
+          label="Last Name *"
+          required
+          filled
+        ></v-text-field>
 
-      <v-text-field v-model="email" :rules="emailRules" label="E-mail" required></v-text-field>
+        <v-text-field filled v-model="email" :rules="emailRules" label="E-mail *" required></v-text-field>
 
-      <v-text-field v-model="message" :rules="messageRules" label="Message" required></v-text-field>
+        <v-textarea      
+          v-model="message"
+          :rules="messageRules"
+          label="Message *"
+          required
+          filled
+        ></v-textarea>
 
-      <v-btn rounded outline :disabled="!valid" color="nav" class="mr-4">Submit</v-btn>
+        <v-btn width="120px" rounded outline :disabled="!valid" color="headings" class="mr-4">Submit</v-btn>
+      </div>
     </v-form>
   </div>
 </template>
