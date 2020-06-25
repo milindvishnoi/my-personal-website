@@ -43,7 +43,7 @@ import BottomAppBar from "./components/BottomAppBar.vue";
 import HomePage from "./views/HomePage.vue";
 import Projects from "./views/Projects.vue";
 import AboutMe from "./views/AboutMe.vue";
-import ContactMe from "./views/ContactMe.vue";
+// import ContactMe from "./views/ContactMe.vue";
 
 export default {
   name: "App",
