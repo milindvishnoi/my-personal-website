@@ -58,7 +58,7 @@ export default {
 
 <style>
 .hero-full-height {
-  height: 100vh;
+  height: 85vh;
 }
 h1 {
   font-size: 80px;

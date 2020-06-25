@@ -1,7 +1,6 @@
 <template>
   <v-app :style="{background: $vuetify.theme.themes[theme].background}">
-    <navbar-mobile v-if="$vuetify.breakpoint.sm || $vuetify.breakpoint.xs" />
-    <navbar-laptop />
+    <navbar />
     <!-- Home Page Container -->
     <v-container app id="home">
       <home-page />
@@ -37,8 +36,7 @@
 </template>
 
 <script>
-import NavbarMobile from "./components/NavbarMobile.vue";
-import NavbarLaptop from "./components/NavbarLaptop.vue";
+import Navbar from "./components/Navbar.vue";
 import BottomAppBar from "./components/BottomAppBar.vue";
 import HomePage from "./views/HomePage.vue";
 import Projects from "./views/Projects.vue";
@@ -50,8 +48,7 @@ export default {
 
   components: {
     HomePage,
-    NavbarMobile,
-    NavbarLaptop,
+    Navbar,
     BottomAppBar,
     Projects,
     AboutMe,

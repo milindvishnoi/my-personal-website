@@ -13,7 +13,7 @@
           Experience
       </v-btn>-->
 
-      <v-btn x-large text color="nav" @click="$vuetify.goTo('#contactme')">Contact Me</v-btn>
+      <!-- <v-btn x-large text color="nav" @click="$vuetify.goTo('#contactme')">Contact Me</v-btn> -->
       <v-spacer />
       <v-btn
         icon

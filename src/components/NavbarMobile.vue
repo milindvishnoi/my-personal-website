@@ -88,11 +88,11 @@ export default {
           icon: "mdi-xml",
           call: "projects"
         },
-        {
-          title: "Contact Me",
-          icon: "mdi-gmail",
-          call: "contactme"
-        }
+        // {
+        //   title: "Contact Me",
+        //   icon: "mdi-gmail",
+        //   call: "contactme"
+        // }
       ],
       listOfThings: [
         "Software Developer.",
