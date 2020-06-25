@@ -1,8 +1,9 @@
 <template>
-  <div>
-    <v-form method="post" @submit="submitMedthod" ref="form" v-model="valid" lazy-validation>
+  <v-col cols="10">
+    <v-form name="contactme" ref="Contact" v-model="valid" lazy-validation netlify>
       <div class="justify-center">
         <v-text-field
+          name="firstName"
           v-model="firstName"
           :counter="30"
           :rules="firstNameRules"
@@ -12,6 +13,7 @@
         ></v-text-field>
 
         <v-text-field
+          name="lastName"
           v-model="lastName"
           :counter="30"
           :rules="lastNameRules"
@@ -20,20 +22,26 @@
           filled
         ></v-text-field>
 
-        <v-text-field filled v-model="email" :rules="emailRules" label="E-mail *" required></v-text-field>
+        <v-text-field name="email" filled v-model="email" :rules="emailRules" label="E-mail *" required></v-text-field>
 
-        <v-textarea      
-          v-model="message"
-          :rules="messageRules"
-          label="Message *"
-          required
-          filled
-        ></v-textarea>
+        <v-textarea name="message" v-model="message" :rules="messageRules" label="Message *" required filled></v-textarea>
 
-        <v-btn width="120px" rounded outline :disabled="!valid" color="headings" class="mr-4">Submit</v-btn>
+        <div>
+          <v-btn
+            type="submit"
+            block
+            outlined
+            full-width
+            rounded
+            outline
+            :disabled="!valid"
+            color="headings"
+            class="mr-4"
+          >Submit</v-btn>
+        </div>
       </div>
     </v-form>
-  </div>
+  </v-col>
 </template>
 
 <script>
