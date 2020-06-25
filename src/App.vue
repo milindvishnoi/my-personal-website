@@ -1,6 +1,7 @@
 <template>
   <v-app :style="{background: $vuetify.theme.themes[theme].background}">
-    <navbar />
+    <navbar-mobile v-if="$vuetify.breakpoint.xm || $vuetify.breakpoint.sm || $vuetify.breakpoint.md" />
+    <navbar-laptop />
     <!-- Home Page Container -->
     <v-container app id="home">
       <home-page />
@@ -19,7 +20,7 @@
       <Projects />
     </v-container>
     <!-- Contact Me Section -->
-    <v-container class="pt-8 align-center" id="contactme">
+    <!-- <v-container class="pt-8 align-center" id="contactme">
       <v-row class="d-flex justify-center">
         <h1
           :class="{'small-h1': this.$vuetify.breakpoint.xs, 'med-h1': this.$vuetify.breakpoint.sm}"
@@ -28,7 +29,7 @@
       <v-row justify="center">
         <contact-me />
       </v-row>
-    </v-container>
+    </v-container> -->
     <!-- Last Indentation -->
     <div style="height: 100px;" />
     <bottom-app-bar />
@@ -36,7 +37,8 @@
 </template>
 
 <script>
-import Navbar from "./components/Navbar.vue";
+import NavbarMobile from "./components/NavbarMobile.vue";
+import NavbarLaptop from "./components/NavbarLaptop.vue";
 import BottomAppBar from "./components/BottomAppBar.vue";
 import HomePage from "./views/HomePage.vue";
 import Projects from "./views/Projects.vue";
@@ -48,11 +50,12 @@ export default {
 
   components: {
     HomePage,
-    Navbar,
+    NavbarMobile,
+    NavbarLaptop,
     BottomAppBar,
     Projects,
     AboutMe,
-    ContactMe
+    // ContactMe
   },
 
   data() {
