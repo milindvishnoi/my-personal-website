@@ -1,7 +1,7 @@
 <template>
   <v-row class="d-flex justify-center">
     <v-col cols="12" sm="12" md="6" class="d-flex justify-center">
-      <img :height="imageSize" :width="imageSize" src="../assets/img/aboutMe.png" />
+      <img :height="imageSize" :width="imageSize" src="../assets/img/aboutMe-min.png" />
     </v-col>
     <v-col cols="12" sm="8" md="6" class="d-flex justify-center">
       <span>
