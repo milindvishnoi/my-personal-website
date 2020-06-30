@@ -1,6 +1,6 @@
 <template>
   <v-app :style="{background: $vuetify.theme.themes[theme].background}">
-    <navbar-mobile v-if="$vuetify.breakpoint.xm || $vuetify.breakpoint.sm || $vuetify.breakpoint.md" />
+    <navbar-mobile v-if="$vuetify.breakpoint.xs || $vuetify.breakpoint.sm || $vuetify.breakpoint.md" />
     <navbar-laptop />
     <!-- Home Page Container -->
     <v-container app id="home">
