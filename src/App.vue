@@ -1,6 +1,8 @@
 <template>
   <v-app :style="{background: $vuetify.theme.themes[theme].background}">
-    <navbar-mobile v-if="$vuetify.breakpoint.xs || $vuetify.breakpoint.sm || $vuetify.breakpoint.md" />
+    <navbar-mobile
+      v-if="$vuetify.breakpoint.xs || $vuetify.breakpoint.sm || $vuetify.breakpoint.md"
+    />
     <navbar-laptop />
     <!-- Home Page Container -->
     <v-container app id="home">
@@ -29,9 +31,14 @@
       <v-row justify="center">
         <contact-me />
       </v-row>
-    </v-container> -->
+    </v-container>-->
     <!-- Last Indentation -->
-    <div style="height: 100px;" />
+    <div class="footer-space" />
+    <footer class="text-center footer-space">Copyright © 2020 Milind Vishnoi</footer>
+    <div
+      v-if="$vuetify.breakpoint.xs || $vuetify.breakpoint.sm || $vuetify.breakpoint.md"
+      class="footer-space"
+    />
     <bottom-app-bar />
   </v-app>
 </template>
@@ -54,7 +61,7 @@ export default {
     NavbarLaptop,
     BottomAppBar,
     Projects,
-    AboutMe,
+    AboutMe
     // ContactMe
   },
 
@@ -81,5 +88,8 @@ h1 {
 }
 .website-background {
   background: white;
+}
+.footer-space {
+  height: 50px;
 }
 </style>

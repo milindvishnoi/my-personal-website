@@ -34,7 +34,7 @@
       <v-list dense nav>
         <v-list-item two-line class="px-0">
           <v-list-item-avatar>
-            <img src="../assets/img/dp.png" />
+            <img src="../assets/img/dp-min.png" />
           </v-list-item-avatar>
 
           <v-list-item-content>
@@ -87,7 +87,7 @@ export default {
           title: "Projects",
           icon: "mdi-xml",
           call: "projects"
-        },
+        }
         // {
         //   title: "Contact Me",
         //   icon: "mdi-gmail",
@@ -96,7 +96,7 @@ export default {
       ],
       listOfThings: [
         "Software Developer.",
-        "Web Developer",
+        "Web Developer.",
         "Memer.",
         "Computer Science Student.",
         "Mathematics Enthusiast."
@@ -104,13 +104,8 @@ export default {
     };
   },
   computed: {
-    getDarkMode: {
-      get: function() {
-        return this.$vuetify.theme.dark;
-      },
-      set: function(newValue) {
-        this.$vuetify.theme.data = newValue;
-      }
+    getDarkMode() {
+      return this.$vuetify.theme.dark;
     }
   },
   methods: {
