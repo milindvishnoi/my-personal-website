@@ -4,27 +4,16 @@
     <v-app-bar app fixed class="d-md-none" color="background" dense flat min-height="52px">
       <v-app-bar-nav-icon @click="clicked = !clicked" x-large color="nav"></v-app-bar-nav-icon>
       <v-spacer />
-      <v-btn text x-large color="nav">
-        <v-icon x-large @click="$vuetify.goTo('#home')">mdi-home</v-icon>
-      </v-btn>
-      <v-spacer />
       <!-- Disabled Light Mode -->
       <v-btn
         v-if="getDarkMode"
         @click="$vuetify.theme.dark = ! $vuetify.theme.dark"
         icon
         color="nav"
-        style="margin: 2px;"
       >
         <v-icon x-large>mdi-weather-sunny</v-icon>
       </v-btn>
-      <v-btn
-        v-else
-        @click="$vuetify.theme.dark = ! $vuetify.theme.dark"
-        icon
-        color="nav"
-        style="margin: 2px;"
-      >
+      <v-btn v-else @click="$vuetify.theme.dark = ! $vuetify.theme.dark" icon color="nav">
         <v-icon x-large>mdi-weather-night</v-icon>
       </v-btn>
     </v-app-bar>

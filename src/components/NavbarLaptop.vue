@@ -1,24 +1,28 @@
 <template>
   <div>
     <!-- For Laptops   -->
-    <v-app-bar app fixed class="hidden-sm-and-down" color="background" dense flat min-height="52px" min-width="100%">
+    <v-app-bar
+      app
+      fixed
+      class="hidden-sm-and-down"
+      color="background"
+      dense
+      flat
+      min-height="52px"
+      min-width="100%"
+    >
       <v-btn x-large text color="nav" @click="$vuetify.goTo('#home')">Home</v-btn>
 
       <v-btn x-large text color="nav" @click="$vuetify.goTo('#aboutme')">Who Am I?</v-btn>
 
       <v-btn x-large text color="nav" @click="$vuetify.goTo('#projects')">Projects</v-btn>
 
-      <!-- For now not displaying experience -->
-      <!-- <v-btn x-large text color="nav">
-          Experience
-      </v-btn>-->
-
       <!-- <v-btn x-large text color="nav" @click="$vuetify.goTo('#contactme')">Contact Me</v-btn> -->
       <v-spacer />
       <v-btn
         icon
         color="nav"
-        style="margin: 2px;"
+        class="mx-0.5"
         href="https://www.instagram.com/confessions.of.a.coding.freak/"
       >
         <v-icon x-large>mdi-instagram</v-icon>
@@ -29,7 +33,7 @@
       <v-btn
         icon
         color="nav"
-        style="margin: 2px;"
+        class="mx-0.5"
         href="https://www.linkedin.com/in/milindvishnoi/"
       >
         <v-icon x-large>mdi-linkedin</v-icon>
@@ -40,7 +44,7 @@
         @click="$vuetify.theme.dark = ! $vuetify.theme.dark"
         icon
         color="nav"
-        style="margin: 2px;"
+        class="mx-0.5"
       >
         <v-icon x-large>mdi-weather-sunny</v-icon>
       </v-btn>
@@ -49,7 +53,7 @@
         @click="$vuetify.theme.dark = ! $vuetify.theme.dark"
         icon
         color="nav"
-        style="margin: 2px;"
+        class="mx-0.5s"
       >
         <v-icon x-large>mdi-weather-night</v-icon>
       </v-btn>
@@ -65,13 +69,8 @@ export default {
     };
   },
   computed: {
-    getDarkMode: {
-      get: function() {
-        return this.$vuetify.theme.dark;
-      },
-      set: function(newValue) {
-        this.$vuetify.theme.data = newValue;
-      }
+    getDarkMode() {
+      return this.$vuetify.theme.dark;
     }
   },
   methods: {

@@ -26,12 +26,7 @@
             <span class="typing"></span>
           </h3>
         </vue-typed-js>
-        <v-btn
-          class="mx-2 bounce"
-          fab
-          color="headings"
-          @click="$vuetify.goTo('#aboutme')"
-        >
+        <v-btn class="mx-2 bounce" fab color="headings" @click="$vuetify.goTo('#aboutme')">
           <v-icon>mdi-arrow-down</v-icon>
         </v-btn>
       </div>
