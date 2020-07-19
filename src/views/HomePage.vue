@@ -1,5 +1,5 @@
 <template>
-  <section class="d-flex flex-column justify-center align-center hero-full-height">
+  <section class="d-flex flex-column justify-center align-center hero-full-height" :class="{'full-mobile-height': this.$vuetify.breakpoint.xs}">
     <v-spacer />
     <div class="d-flex justify-center align-center">
       <div class="d-flex flex-column justify-center align-center">
@@ -57,6 +57,9 @@ export default {
 </script>
 
 <style scoped>
+.full-mobile-height {
+  min-height: 85vh;
+}
 .bounce {
   top: -104px;
   -webkit-animation: bounce 0.75s infinite;
