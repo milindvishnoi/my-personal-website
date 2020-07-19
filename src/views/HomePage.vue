@@ -1,5 +1,5 @@
 <template>
-  <section class="d-flex flex-column justify-center align-center hero-full-height" :class="{'full-mobile-height': this.$vuetify.breakpoint.xs}">
+  <section class="d-flex flex-column justify-center align-center hero-full-height" :class="{'mobile-full-height': this.$vuetify.breakpoint.xs}">
     <v-spacer />
     <div class="d-flex justify-center align-center">
       <div class="d-flex flex-column justify-center align-center">
@@ -41,25 +41,11 @@ export default {
         "Mathematics Enthusiast."
       ]
     };
-  },
-  computed: {
-    imageWidth() {
-      switch (this.$vuetify.breakpoint.name) {
-        case "xs":
-          return "70px";
-        case "sm":
-          return "130px";
-      }
-      return "160px";
-    }
   }
 };
 </script>
 
 <style scoped>
-.full-mobile-height {
-  min-height: 85vh;
-}
 .bounce {
   top: -104px;
   -webkit-animation: bounce 0.75s infinite;
@@ -100,5 +86,8 @@ export default {
   .app-sub-headings {
     font-size: 3vw;
   }
+}
+.mobile-full-height {
+  max-height: 90vh;
 }
 </style>
