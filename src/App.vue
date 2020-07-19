@@ -5,9 +5,7 @@
     />
     <navbar-laptop />
     <!-- Home Page Container -->
-    <v-container app id="home">
-      <home-page />
-    </v-container>
+    <home-page id="home" />
     <!-- About Me -->
     <v-container class="pt-8" id="aboutme">
       <v-row class="d-flex justify-center">

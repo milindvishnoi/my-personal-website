@@ -97,14 +97,5 @@ export default {
 };
 </script>
 
-<style scoped>
-h1 {
-  font-size: 80px;
-}
-.med-h1 {
-  font-size: 60px;
-}
-.small-h1 {
-  font-size: 45px;
-}
+<style>
 </style>

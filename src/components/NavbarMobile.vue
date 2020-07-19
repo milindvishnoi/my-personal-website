@@ -22,11 +22,7 @@
     <v-navigation-drawer app v-model="clicked" class="d-md-none">
       <v-list dense nav>
         <v-list-item two-line class="px-0">
-          <v-list-item-avatar>
-            <img src="../assets/img/dp-min.png" />
-          </v-list-item-avatar>
-
-          <v-list-item-content>
+          <v-list-item-content class="mx-2">
             <v-list-item-title style="color:#E53935;font-size:15px;">I'M MILIND VISHNOI</v-list-item-title>
             <vue-typed-js
               :strings="listOfThings"
@@ -43,7 +39,7 @@
           </v-list-item-content>
         </v-list-item>
 
-        <v-divider></v-divider>
+        <v-divider class="mb-3"></v-divider>
         <span v-for="item in items" :key="item.title">
           <v-list-item link @click="navMethods(item.call)">
             <v-list-item-icon>

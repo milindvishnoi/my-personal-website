@@ -1,18 +1,11 @@
 <template>
   <section class="d-flex flex-column justify-center align-center hero-full-height">
+    <v-spacer />
     <div class="d-flex justify-center align-center">
       <div class="d-flex flex-column justify-center align-center">
-        <h2 :class="{'small-h2': this.$vuetify.breakpoint.xs}" style="color: #E53935;">HELLO, I'M</h2>
+        <h2 class="app-headings">HELLO, I'M</h2>
         <div class="d-flex justify-around align-center justify-center">
-          <img
-            :width="imageWidth"
-            :class="{'ml-8':this.$vuetify.breakpoint.xs}"
-            src="../assets/img/dp-min.png"
-          />
-          <h1
-            class="ml-4"
-            :class="{'small-h1': this.$vuetify.breakpoint.xs, 'med-h1': this.$vuetify.breakpoint.sm}"
-          >MILIND VISHNOI</h1>
+          <h1 class="ml-4 app-title">MILIND VISHNOI</h1>
         </div>
         <vue-typed-js
           :strings="listOfThings"
@@ -21,16 +14,17 @@
           :loop="true"
           :cursorChar="'_'"
         >
-          <h3>
+          <div class="app-sub-headings headings">
             A
-            <span class="typing"></span>
-          </h3>
+            <span class="typing app-sub-headings headings"></span>
+          </div>
         </vue-typed-js>
-        <v-btn class="mx-2 bounce" fab color="headings" @click="$vuetify.goTo('#aboutme')">
-          <v-icon>mdi-arrow-down</v-icon>
-        </v-btn>
       </div>
     </div>
+    <v-spacer />
+    <v-btn small class="bounce" icon fab @click="$vuetify.goTo('#aboutme')">
+      <v-icon color="headings">mdi-arrow-down</v-icon>
+    </v-btn>
   </section>
 </template>
 
@@ -62,9 +56,9 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .bounce {
-  margin-top: 20px;
+  top: -104px;
   -webkit-animation: bounce 0.75s infinite;
 }
 @-webkit-keyframes bounce {
@@ -75,22 +69,33 @@ export default {
     transform: scale(1, 1) translate(0px, -10px);
   }
 }
-.hero-full-height {
-  height: 100vh;
+.app-title {
+  font-size: 8vw;
 }
-h1 {
-  font-size: 80px;
+.app-headings {
+  background: none;
+  font-size: 3vw;
+  color: #D90429;
 }
-h2 {
-  font-size: 40px;
+.app-sub-headings {
+  font-size: 1.2vw;
 }
-.med-h1 {
-  font-size: 60px;
+/* md size */
+@media screen and (max-width: 1000px) {
+  .app-title {
+    font-size: 10vw;
+  }
+  .app-headings {
+    font-size: 6vw;
+  }
+  .app-sub-headings {
+    font-size: 2vw;
+  }
 }
-.small-h1 {
-  font-size: 34px;
-}
-.small-h2 {
-  font-size: 30px;
+/* small size */
+@media screen and (max-width: 600px) {
+  .app-sub-headings {
+    font-size: 3vw;
+  }
 }
 </style>

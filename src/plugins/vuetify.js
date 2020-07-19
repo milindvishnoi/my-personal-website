@@ -6,7 +6,7 @@ Vue.use(Vuetify);
 export default new Vuetify({
     theme: {
         dark: true,
-        themes:{
+        themes: {
             dark: {
                 primary: "#2B2D42", //dark voilet
                 headings: "#D90429", //darker red
@@ -22,5 +22,10 @@ export default new Vuetify({
                 text: "#000000"
             }
         }
+    },
+    breakpoint: {
+        thresholds: {
+            md: 1000,
+        },
     }
 });
