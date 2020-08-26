@@ -1,5 +1,5 @@
 <template>
-  <section class="d-flex flex-column justify-center align-center hero-full-height" :class="{'mobile-full-height': this.$vuetify.breakpoint.xs}">
+  <div class="d-flex flex-column justify-center align-center hero-full-height" :class="{'mobile-full-height': this.$vuetify.breakpoint.xs}">
     <v-spacer />
     <div class="d-flex justify-center align-center">
       <div class="d-flex flex-column justify-center align-center">
@@ -25,7 +25,7 @@
     <v-btn small class="bounce" icon fab @click="$vuetify.goTo('#aboutme')">
       <v-icon color="headings">mdi-arrow-down</v-icon>
     </v-btn>
-  </section>
+  </div>
 </template>
 
 <script>
@@ -59,15 +59,15 @@ export default {
   }
 }
 .app-title {
-  font-size: 8vw;
+  font-size: 128px;
 }
 .app-headings {
   background: none;
-  font-size: 3vw;
+  font-size: 48px;
   color: #D90429;
 }
 .app-sub-headings {
-  font-size: 1.2vw;
+  font-size: 20px;
 }
 /* md size */
 @media screen and (max-width: 1000px) {

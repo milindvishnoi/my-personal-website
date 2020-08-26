@@ -3,19 +3,6 @@
     <!-- For Mobiles -->
     <v-app-bar app fixed class="d-md-none" color="background" dense flat min-height="52px">
       <v-app-bar-nav-icon @click="clicked = !clicked" x-large color="nav"></v-app-bar-nav-icon>
-      <v-spacer />
-      <!-- Disabled Light Mode -->
-      <v-btn
-        v-if="getDarkMode"
-        @click="$vuetify.theme.dark = ! $vuetify.theme.dark"
-        icon
-        color="nav"
-      >
-        <v-icon x-large>mdi-weather-sunny</v-icon>
-      </v-btn>
-      <v-btn v-else @click="$vuetify.theme.dark = ! $vuetify.theme.dark" icon color="nav">
-        <v-icon x-large>mdi-weather-night</v-icon>
-      </v-btn>
     </v-app-bar>
 
     <!-- Divider (for mobiles) -->
@@ -87,11 +74,6 @@ export default {
         "Mathematics Enthusiast."
       ]
     };
-  },
-  computed: {
-    getDarkMode() {
-      return this.$vuetify.theme.dark;
-    }
   },
   methods: {
     navMethods(call) {

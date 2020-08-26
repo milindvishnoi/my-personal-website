@@ -19,14 +19,6 @@
 
       <!-- <v-btn x-large text color="nav" @click="$vuetify.goTo('#contactme')">Contact Me</v-btn> -->
       <v-spacer />
-      <v-btn
-        icon
-        color="nav"
-        class="mx-0.5"
-        href="https://www.instagram.com/confessions.of.a.coding.freak/"
-      >
-        <v-icon x-large>mdi-instagram</v-icon>
-      </v-btn>
       <v-btn icon color="nav" style="margin: 2px;" href="https://github.com/milindvishnoi">
         <v-icon x-large>mdi-github</v-icon>
       </v-btn>
@@ -40,7 +32,7 @@
       </v-btn>
       <!-- Disabled Light Mode -->
       <v-btn
-        v-if="getDarkMode"
+        v-if="$vuetify.theme.dark"
         @click="$vuetify.theme.dark = ! $vuetify.theme.dark"
         icon
         color="nav"
@@ -60,44 +52,3 @@
     </v-app-bar>
   </div>
 </template>
-
-<script>
-export default {
-  data() {
-    return {
-      overlay: false
-    };
-  },
-  computed: {
-    getDarkMode() {
-      return this.$vuetify.theme.dark;
-    }
-  },
-  methods: {
-    navMethods(call) {
-      this.clicked = false;
-      switch (call) {
-        case "home":
-          this.$vuetify.goTo("#home");
-          break;
-        case "aboutme":
-          this.$vuetify.goTo("#aboutme");
-          break;
-        case "projects":
-          this.$vuetify.goTo("#projects");
-          break;
-        case "contactme":
-          this.$vuetify.goTo("#contactme");
-          break;
-      }
-      return 0;
-    }
-  }
-};
-</script>
-
-<style scoped>
-text-color {
-  color: secondary;
-}
-</style>
