@@ -1,9 +1,6 @@
 <template>
   <v-app :style="{background: $vuetify.theme.themes[theme].background}">
-    <navbar-mobile
-      v-if="$vuetify.breakpoint.xs || $vuetify.breakpoint.sm || $vuetify.breakpoint.md"
-    />
-    <navbar-laptop />
+    <navbar-mobile/>
     <!-- Home Page Container -->
     <home-page id="home" />
     <!-- About Me -->
@@ -34,7 +31,6 @@
     <div class="footer-space" />
     <footer class="text-center footer-space">Copyright © 2020 Milind Vishnoi</footer>
     <div
-      v-if="$vuetify.breakpoint.xs || $vuetify.breakpoint.sm || $vuetify.breakpoint.md"
       class="footer-space"
     />
     <bottom-app-bar />
@@ -43,7 +39,6 @@
 
 <script>
 import NavbarMobile from "./components/NavbarMobile.vue";
-import NavbarLaptop from "./components/NavbarLaptop.vue";
 import BottomAppBar from "./components/BottomAppBar.vue";
 import HomePage from "./views/HomePage.vue";
 import Projects from "./views/Projects.vue";
@@ -56,7 +51,6 @@ export default {
   components: {
     HomePage,
     NavbarMobile,
-    NavbarLaptop,
     BottomAppBar,
     Projects,
     AboutMe

@@ -19,12 +19,13 @@
             <span class="typing app-sub-headings headings"></span>
           </div>
         </vue-typed-js>
+        <div class="d-flex flex-column justify-center bounce red-color mb-10" @click="$vuetify.goTo('#aboutme')">
+          More
+          <v-icon class="red-color">mdi-arrow-down</v-icon>
+        </div>
       </div>
     </div>
     <v-spacer />
-    <v-btn small class="bounce" icon fab @click="$vuetify.goTo('#aboutme')">
-      <v-icon color="headings">mdi-arrow-down</v-icon>
-    </v-btn>
   </div>
 </template>
 
@@ -47,7 +48,7 @@ export default {
 
 <style scoped>
 .bounce {
-  top: -104px;
+  margin-top: 60px;
   -webkit-animation: bounce 0.75s infinite;
 }
 @-webkit-keyframes bounce {
@@ -64,6 +65,9 @@ export default {
 .app-headings {
   background: none;
   font-size: 48px;
+  color: #D90429;
+}
+.red-color {
   color: #D90429;
 }
 .app-sub-headings {

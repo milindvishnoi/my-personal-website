@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-bottom-navigation class="d-md-none" fixed background-color="headings" color="white">
+    <v-bottom-navigation fixed background-color="headings" color="white">
       <v-btn icon style="margin: 2px;" href="https://github.com/milindvishnoi">
         <v-icon x-large>mdi-github</v-icon>
       </v-btn>
