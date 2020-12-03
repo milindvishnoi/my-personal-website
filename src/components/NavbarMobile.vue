@@ -1,12 +1,13 @@
 <template>
   <div>
     <!-- For Mobiles -->
-    <v-app-bar app fixed color="background" dense flat min-height="52px">
+    <v-app-bar elevate-on-scroll app fixed color="background" dense flat min-height="52px">
+      <v-spacer />
       <v-app-bar-nav-icon @click="clicked = !clicked" x-large color="nav"></v-app-bar-nav-icon>
     </v-app-bar>
 
     <!-- Divider (for mobiles) -->
-    <v-navigation-drawer app v-model="clicked">
+    <v-navigation-drawer disable-resize-watcher app v-model="clicked" right>
       <v-list dense nav>
         <v-list-item two-line class="px-0">
           <v-list-item-content class="mx-2">

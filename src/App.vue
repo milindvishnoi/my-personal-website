@@ -1,38 +1,40 @@
 <template>
   <v-app :style="{background: $vuetify.theme.themes[theme].background}">
     <navbar-mobile/>
-    <!-- Home Page Container -->
-    <home-page id="home" />
-    <!-- About Me -->
-    <v-container class="pt-8" id="aboutme">
-      <v-row class="d-flex justify-center">
-        <h1
-          :class="{'small-h1': this.$vuetify.breakpoint.xs, 'med-h1': this.$vuetify.breakpoint.sm}"
-        >Who Am I?</h1>
-      </v-row>
-      <about-me />
-    </v-container>
-    <!-- Projects Container -->
-    <v-container class="pt-8" id="projects">
-      <Projects />
-    </v-container>
-    <!-- Contact Me Section -->
-    <!-- <v-container class="pt-8 align-center" id="contactme">
-      <v-row class="d-flex justify-center">
-        <h1
-          :class="{'small-h1': this.$vuetify.breakpoint.xs, 'med-h1': this.$vuetify.breakpoint.sm}"
-        >Get In Touch!</h1>
-      </v-row>
-      <v-row justify="center">
-        <contact-me />
-      </v-row>
-    </v-container>-->
-    <!-- Last Indentation -->
-    <div class="footer-space" />
-    <footer class="text-center footer-space">Copyright © 2020 Milind Vishnoi</footer>
-    <div
-      class="footer-space"
-    />
+    <v-main>
+      <!-- Home Page Container -->
+      <home-page id="home" />
+      <!-- About Me -->
+      <v-container class="pt-8" id="aboutme">
+        <v-row class="d-flex justify-center">
+          <h1
+            :class="{'small-h1': this.$vuetify.breakpoint.xs, 'med-h1': this.$vuetify.breakpoint.sm}"
+          >Who Am I?</h1>
+        </v-row>
+        <about-me />
+      </v-container>
+      <!-- Projects Container -->
+      <v-container class="pt-8" id="projects">
+        <Projects />
+      </v-container>
+      <!-- Contact Me Section -->
+      <!-- <v-container class="pt-8 align-center" id="contactme">
+        <v-row class="d-flex justify-center">
+          <h1
+            :class="{'small-h1': this.$vuetify.breakpoint.xs, 'med-h1': this.$vuetify.breakpoint.sm}"
+          >Get In Touch!</h1>
+        </v-row>
+        <v-row justify="center">
+          <contact-me />
+        </v-row>
+      </v-container>-->
+      <!-- Last Indentation -->
+      <div class="footer-space" />
+      <footer class="text-center footer-space">Copyright © 2020 Milind Vishnoi</footer>
+      <div
+        class="footer-space"
+      />
+    </v-main>
     <bottom-app-bar />
   </v-app>
 </template>
