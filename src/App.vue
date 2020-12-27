@@ -1,6 +1,6 @@
 <template>
   <v-app :style="{background: $vuetify.theme.themes[theme].background}">
-    <navbar-mobile/>
+    <navbar />
     <v-main>
       <!-- Home Page Container -->
       <home-page id="home" />
@@ -40,7 +40,7 @@
 </template>
 
 <script>
-import NavbarMobile from "./components/NavbarMobile.vue";
+import Navbar from "./components/Navbar.vue";
 import BottomAppBar from "./components/BottomAppBar.vue";
 import HomePage from "./views/HomePage.vue";
 import Projects from "./views/Projects.vue";
@@ -52,15 +52,11 @@ export default {
 
   components: {
     HomePage,
-    NavbarMobile,
+    Navbar,
     BottomAppBar,
     Projects,
     AboutMe
     // ContactMe
-  },
-
-  data() {
-    return {};
   },
   computed: {
     theme() {
