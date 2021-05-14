@@ -4,7 +4,7 @@ const describeMeArray = ["Software Developer.",
 
 const projects = [
                   {
-                    desc: "Cross-Platform Application",
+                    desc: "Web Application",
                     projectName: "Material Math",
                     descriptionOne:
                       "Growing up until fifth grade I was not interested in Maths. Now I am currently pursuring a Math Major and rest is history.",
@@ -23,6 +23,34 @@ const projects = [
                     github: "https://github.com/milindvishnoi/Download-Folder-Organizer"
                   },
                   {
+                    desc: "Web Application",
+                    projectName: "UTM CSSC Website",
+                    descriptionOne:
+                      "This is a website, my friends and I created for UTM CSSC (University of Toronto Computer Science Student Community).",
+                    descriptionTwo:
+                      "It is an attempt to create an enviornment of out-of-class learning, by encouraging collabration, guidance and doing side projects.",
+                    github: "https://github.com/utm-cssc/website",
+                    website: "https://cssc.utm.utoronto.ca/"
+                  },
+                  {
+                    desc: "Web Application",
+                    projectName: "GameFace",
+                    descriptionOne:
+                      "After being tired of application giving biased opinions about games.",
+                    descriptionTwo:
+                      "We came up with a solution to make a new application, to give the power or rankings to the players.",
+                    github: "https://github.com/milindvishnoi/GameFace",
+                    website: "https://evening-cove-91552.herokuapp.com/"
+                  },
+                  {
+                    desc: "JS Library",
+                    projectName: "CardsMadeEasy",
+                    descriptionOne:
+                      "Being a frontend developer for a couple of years, I realized creating unique cards to display information took a lot of my time.",
+                    descriptionTwo:
+                      "So to help you lower this burden, I created CardMadeEasy that has pre-made cards with customizable cards to suit all your website styles.",
+                  },
+                  {
                     desc: "Website",
                     projectName: "Portfolio",
                     descriptionOne: "",
@@ -30,34 +58,6 @@ const projects = [
                       "This website gives me a platform to share all my coding experience with you!😊",
                     website: "https://heuristic-chandrasekhar-bcc3f0.netlify.app",
                     github: "https://github.com/milindvishnoi/personal-website"
-                  },
-                  {
-                    desc: "Java Game",
-                    projectName: "Othello",
-                    descriptionOne:
-                      "Growing up I didn't have a computer until fifth grade. I heavily relayed on the classic board games for entertainment.",
-                    descriptionTwo:
-                      "This redesigned Othello is an attempt to give children a taste of these classics with a mordern touch.",
-                    github: "https://github.com/milindvishnoi/Othello-Game"
-                  },
-                  {
-                    desc: "Web Application",
-                    projectName: "Coffee Shop Templete",
-                    descriptionOne:
-                      "I believe in learning by doing and nothings btter than making a project to check your learning.",
-                    descriptionTwo:
-                      "This was a sample coffee shop templete I created to learn in-depth about Python Flask, Authentication and APIs.",
-                    github:
-                      "https://github.com/milindvishnoi/CoffeeShop-MultipleRoleAuthorizationAPI"
-                  },
-                  {
-                    desc: "Python Game",
-                    projectName: "Mynes",
-                    descriptionOne:
-                      "During my early years with a computer; I played the built-in classic games but never understood how to play any of them.",
-                    descriptionTwo:
-                      "Now when I know how most of them are played, I want to bring them back. This game is an attempt to do so.",
-                    github: "https://github.com/milindvishnoi/Mynes"
                   }
                 ]
 

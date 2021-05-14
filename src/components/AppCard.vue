@@ -9,21 +9,20 @@
         <v-list-item-title class="headline mb-1" style="color:red;">{{ projectName }}</v-list-item-title>
       </v-list-item-content>
       <v-card-actions>
-        <v-btn v-if="web" :href="website" icon large>
+        <v-btn v-if="website" :href="website" icon large>
           <v-icon large>mdi-web</v-icon>
         </v-btn>
-        <v-btn icon large :href="github">
+        <v-btn v-if="github" icon large :href="github">
           <v-icon large>fab fa-github-alt</v-icon>
         </v-btn>
       </v-card-actions>
     </v-list-item>
     <v-card-text
       :color="getDarkMode ? 'white' : 'black'"
-      :class="{'second-sentence': isdescriptionTwo}"
+      class="second-sentence"
     >{{ descriptionOne }}</v-card-text>
     <v-card-text
       :color="getDarkMode ? 'white' : 'black'"
-      v-if="isdescriptionTwo"
       class="pt-0"
     >{{ descriptionTwo }}</v-card-text>
   </v-card>
@@ -40,12 +39,6 @@ export default {
     github: String
   },
   computed: {
-    web() {
-      return this.website > "";
-    },
-    isdescriptionTwo() {
-      return this.descriptionTwo > "";
-    },
     getDarkMode() {
       return this.$vuetify.theme.dark;
     }
