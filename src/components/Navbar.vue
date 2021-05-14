@@ -13,7 +13,7 @@
           <v-list-item-content class="mx-2">
             <v-list-item-title style="color:#E53935;font-size:15px;">I'M MILIND VISHNOI</v-list-item-title>
             <vue-typed-js
-              :strings="listOfThings"
+              :strings="describeMeArray"
               :typeSpeed="50"
               :backSpeed="50"
               :loop="true"
@@ -44,6 +44,8 @@
 </template>
 
 <script>
+import { describeMeArray } from "../data";
+
 export default {
   data() {
     return {
@@ -67,13 +69,7 @@ export default {
         //   call: "contactme"
         // }
       ],
-      listOfThings: [
-        "Software Developer.",
-        "Web Developer.",
-        "Memer.",
-        "Computer Science Student.",
-        "Mathematics Enthusiast."
-      ]
+      describeMeArray
     };
   },
   methods: {

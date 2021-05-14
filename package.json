@@ -12,8 +12,7 @@
     "core-js": "^3.6.5",
     "vue": "^2.6.11",
     "vue-typed-js": "^0.1.2",
-    "vuetify": "^2.2.30",
-    "vuex": "^3.4.0"
+    "vuetify": "^2.2.30"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.13.0",

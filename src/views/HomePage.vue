@@ -8,7 +8,7 @@
           <h1 class="ml-4 app-title">MILIND VISHNOI</h1>
         </div>
         <vue-typed-js
-          :strings="listOfThings"
+          :strings="describeMeArray"
           :typeSpeed="50"
           :backSpeed="50"
           :loop="true"
@@ -30,20 +30,15 @@
 </template>
 
 <script>
+import { describeMeArray } from "../data.js";
+
 export default {
   name: "HomePage",
   data() {
     return {
-      listOfThings: [
-        "Software Developer.",
-        "Web Developer.",
-        "Memer.",
-        "Computer Science Student.",
-        "Mathematics Enthusiast."
-      ]
-    };
-  }
-};
+      describeMeArray
+    }
+}};
 </script>
 
 <style scoped>
