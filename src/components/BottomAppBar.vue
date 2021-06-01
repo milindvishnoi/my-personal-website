@@ -6,6 +6,9 @@
     <v-btn icon style="margin: 2px;" href="https://www.linkedin.com/in/milindvishnoi/">
       <v-icon x-large>mdi-linkedin</v-icon>
     </v-btn>
+    <v-btn icon style="margin: 2px;" href="../assets/Milind_Vishnoi_CV.pdf" download>
+      <v-icon large>mdi-file-download</v-icon>
+    </v-btn>
     <!-- Disabled Light Mode -->
     <v-btn
       v-if="$vuetify.theme.dark"
