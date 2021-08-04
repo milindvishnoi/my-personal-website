@@ -50,6 +50,14 @@ a {
   margin: 0;
 }
 
+.footer {
+  position: absolute;
+  bottom: 30px;
+  text-align: center;
+  visibility: visible;
+  width: 100%;
+}
+
 .button {
 	pointer-events: auto;
 	cursor: pointer;
@@ -130,5 +138,10 @@ a {
 
   .btn-wrapper {
     margin-top: 20px;
+  }
+
+  .footer {
+    bottom: 10px;
+    font-size: 12px;
   }
 }
