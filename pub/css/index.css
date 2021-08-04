@@ -34,6 +34,7 @@ a {
 .btn-wrapper {
   display: flex;
   margin-top: 50px;
+  margin-bottom: 130px;
 }
 
 .name {
@@ -104,4 +105,30 @@ a {
 	to {
 		transform: translate3d(0,0,0);
 	}
+}
+
+@media screen and (max-width: 992px) {
+  .name {
+  font-size: 18vw;
+  }
+
+  .intro {
+    font-size: 15vw;
+  }
+
+  .btn-wrapper {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .button {
+    margin-right: 5px;
+  }
+
+  .btn-wrapper {
+    margin-top: 20px;
+  }
 }
