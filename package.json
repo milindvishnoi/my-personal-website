@@ -20,7 +20,7 @@
   "dependencies": {
     "express": "^4.17.1",
     "granim": "^2.0.0",
-    "nodemon": "^2.0.12",
+    "nodemon": "^2.0.20",
     "path": "^0.12.7"
   }
 }
