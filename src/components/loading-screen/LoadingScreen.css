@@ -1,0 +1,76 @@
+@keyframes moveRight {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+@keyframes wave {
+  0% {
+    transform: none;
+  }
+  15% {
+    transform: translateX(15%) rotate(7deg);
+  }
+  30% {
+    transform: translateX(-10%) rotate(-7deg);
+  }
+  45% {
+    transform: translateX(8%) rotate(4deg);
+  }
+  60% {
+    transform: translateX(-3%) rotate(-4deg);
+  }
+  75% {
+    transform: translateX(1%) rotate(2deg);
+  }
+  100% {
+    transform: none;
+  }
+}
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+span {
+  display: inline-block;
+  font-size: 50px;
+}
+/* .give-space-for-hello {
+  animation-name: moveRight;
+  animation-duration: 2s;
+  animation-delay: 2s;
+} */
+.emoji-wave {
+  animation: wave, fade-out;
+  animation-duration: 2s, 2s;
+  animation-delay: 0s, 2.2s;
+  animation-fill-mode: forwards;
+}
+/* .out {
+  animation-name: fade-out;
+  animation-duration: 2s;
+  animation-delay: 2.5s;
+} */
+/* .hello {
+  opacity: 0;
+  width: 0;
+  animation-name: fade;
+  animation-delay: 2s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  color: var(--ternary-text);
+} */
+.centered {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

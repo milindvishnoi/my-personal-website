@@ -1,0 +1,10 @@
+:root {
+  --primary-text: #f1f1f1;
+  --secondy-text: #0071cf;
+  --ternary-text: #00ff92;
+  --yellow-text: #d2a700;
+}
+
+body {
+  color: var(--primary-text);
+}
