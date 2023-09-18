@@ -1,27 +1,29 @@
 .center {
+  height: 100vh;
   display: flex;
-  height: 80vh;
-  flex-direction: column;
-  margin-top: 10vh;
-  margin-left: 10%;
-  margin-right: 10%;
-  justify-content: space-evenly;
-}
-.hello {
-  color: var(--ternary-text);
-  font-size: 30px;
-  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2vh;
 }
 .intro {
+  display: flex;
+  width: 100%;
+  height: 85vh;
+  flex-direction: column;
+  justify-content: space-evenly;
+  max-width: 1140px;
+}
+.intro-name {
   color: var(--primary-text);
-  font-size: 55px;
+  font-size: 3.5rem;
   width: 80%;
 }
-.desc {
+.intro-desc {
   color: var(--yellow-text);
-  font-size: 25px;
-  width: 70%;
+  font-size: 1.6rem;
+  width: 60%;
+  margin-top: 1rem;
 }
-.reach-out {
-  font-size: 23px;
+.intro-reachout {
+  font-size: 1.5rem;
 }

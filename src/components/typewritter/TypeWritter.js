@@ -1,19 +1,21 @@
+import "./TypeWritter.css";
 import React, { useEffect, useState } from "react";
 
-export default function TypeWritter({ msgs }) {
+export default function TypeWritter({ word }) {
   const [display, setDisplay] = useState("");
-  const loopEachWord = () => {
-    msgs.map((msg) => setTimeout(updateEachAlpha(msg), 1000));
-  };
-  const updateEachAlpha = (msg) => {
-    [...msg].forEach((alpha) => {
-      setTimeout(() => {
-        setDisplay((d) => d + alpha);
-        console.log("Here ");
-      }, 1000);
-    });
-  };
-  useEffect(() => loopEachWord(), []);
 
-  return <div>{display}</div>;
+  useEffect(() => {
+    console.log("Here");
+    const timeout = setTimeout(() => {
+      setDisplay(word.slice(0, display.length + 1));
+    }, 200);
+    return () => clearTimeout(timeout);
+  }, [display]);
+
+  return (
+    <div className="d-flex">
+      {display}
+      <div className="cursor" />
+    </div>
+  );
 }

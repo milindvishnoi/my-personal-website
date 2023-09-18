@@ -18,10 +18,11 @@ a {
   color: var(--primary-text);
 }
 
-.centered {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 760px) {
+}
+
+@media screen and (max-width: 550px) {
 }

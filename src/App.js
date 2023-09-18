@@ -11,6 +11,7 @@ function App() {
       setLoad(true);
     }, 4200);
   }, []);
+
   return <div className="App">{!load ? <LoadingScreen /> : <Home />}</div>;
 }
 
