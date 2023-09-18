@@ -13,10 +13,13 @@
   justify-content: space-evenly;
   max-width: 1140px;
 }
-.intro-name {
+.intro-who {
   color: var(--primary-text);
   font-size: 3.5rem;
   width: 80%;
+}
+.intro-name {
+  font-weight: 1000;
 }
 .intro-desc {
   color: var(--yellow-text);
@@ -26,4 +29,11 @@
 }
 .intro-reachout {
   font-size: 1.5rem;
+}
+.point-icon {
+  top: 3px;
+  font-size: 1.7rem;
+}
+.computer-icon {
+  font-size: 1.8rem;
 }

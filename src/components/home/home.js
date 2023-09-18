@@ -8,16 +8,17 @@ export default function Home() {
       <div className="intro">
         <TypeWritter word="<Hello>!</Hello>" />
         <div>
-          <div className="intro-name">
-            I'm <b>Milind Vishnoi</b>,
+          <div className="intro-who">
+            I'm <span className="intro-name">Milind Vishnoi</span>,
           </div>
           <div className="intro-desc">
             a software engineer, recently graduated from UofT. I build software
-            for web and mobile to automate/simplify life 👨‍💻
+            for web and mobile to automate/simplify life{" "}
+            <span className="computer-icon">👨‍💻</span>
           </div>
         </div>
         <div className="intro-reachout">
-          Get in touch 👉{" "}
+          Get in touch <span className="point-icon">👉</span>{" "}
           <a href="mailto:milindvishnoi@gmail.com">milindvishnoi@gmail.com</a>
         </div>
       </div>
